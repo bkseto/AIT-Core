@@ -229,9 +229,9 @@ class CmdAPI:
                         output.write(str(cmdobj))
 
             except socket.error as e:
-                log.error(e.message)
+                log.error(e)
             except IOError as e:
-                log.error(e.message)
+                log.error(e)
 
         return status
 
